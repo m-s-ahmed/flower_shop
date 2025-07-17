@@ -79,7 +79,6 @@
 .header-container {
   display: flex;
   gap: 97px;
-  height: 620px;
   justify-content: center;
   align-items: center;
   background-color: #f8d4dc;
@@ -284,17 +283,18 @@
   justify-content: center;
 }
 
-form{
+form {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
 
-.latest-container h1{
+.latest-container h1 {
   font-size: 40px;
   margin-bottom: 20px;
 }
-input[type="email"]{
+
+input[type="email"] {
   padding: 20px 40px;
   width: 300px;
   border: none;
@@ -328,4 +328,139 @@ footer {
 .footer-description {
   color: rgb(199, 198, 198);
   margin-top: 10px;
+}
+
+
+/* responsive work */
+
+/* mobile devices */
+
+@media screen and (max-width:764px) {
+  /* Header section */
+  .header-container {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-description {
+    font-size: 0.9rem;
+    text-align: center;
+
+  }
+
+  .header-container img {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Featured flowers section */
+
+  .feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-image-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+  }
+
+  .feature-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .flower {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .flower-1 img,
+  .flower-2 img,
+  .flower-3 img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  /* support section */
+  .support {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    background-color: rgba(39, 39, 39, 0.05);
+  }
+
+  /* Hot deal section */
+  .hotdealcontainer {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  /* Instagram section */
+
+  .instagramcontent h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .header-descriptionn {
+    font-size: 0.6rem;
+  }
+
+  .instacontainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .instaimagecontainer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+
+  /* Latest section */
+  .latest-container {
+    width: 90%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+  }
+   form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+    /* Footer */
+  .footer-container {
+    padding: 20px;
+    text-align: center;
+    height: auto;
+  }
+
+    .footer-title,
+  .footer-title-2 {
+    font-size:2rem;
+  }
+  .footer-description {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 }
