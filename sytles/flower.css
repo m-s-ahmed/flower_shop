@@ -335,7 +335,7 @@ footer {
 
 /* mobile devices */
 
-@media screen and (max-width:764px) {
+@media screen and (max-width:576px) {
   /* Header section */
   .header-container {
     flex-direction: column-reverse;
